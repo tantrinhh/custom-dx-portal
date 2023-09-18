@@ -1,4 +1,5 @@
-export const Welcome_wrapper = () => {
+import React from "react";
+const Welcome_wrapper = () => {
   return (
     <>
       <div
@@ -229,3 +230,4 @@ export const Welcome_wrapper = () => {
     </>
   );
 };
+export default Welcome_wrapper;

@@ -1,4 +1,5 @@
-export const Problem = () => {
+import React from "react";
+const Problem = () => {
   return (
     <>
       <div
@@ -264,3 +265,4 @@ export const Problem = () => {
     </>
   );
 };
+export default Problem;

@@ -1,4 +1,5 @@
-export const Support = () => {
+import React from "react";
+const Support = () => {
   return (
     <div className="section-full mobile-page-padding our-service-wrap  p-b50  square_shape2">
       <div className="section-content">
@@ -292,3 +293,4 @@ export const Support = () => {
     </div>
   );
 };
+export default Support;

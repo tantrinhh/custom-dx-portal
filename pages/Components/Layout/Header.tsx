@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Header = () => {
+const Header = () => {
   return (
     <>
       <header className="site-header header-style-1 mobile-sider-drawer-menu">
@@ -219,3 +219,4 @@ export const Header = () => {
     </>
   );
 };
+export default Header;

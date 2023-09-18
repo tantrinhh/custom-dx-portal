@@ -1,4 +1,5 @@
-export const Story = () => {
+import React from "react";
+const Story = () => {
   return (
     <>
       <div
@@ -93,3 +94,4 @@ export const Story = () => {
     </>
   );
 };
+export default Story;

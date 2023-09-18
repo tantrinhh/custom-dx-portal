@@ -1,4 +1,5 @@
-export const Arrays = () => {
+import React from "react";
+const Arrays = () => {
   return (
     <>
       <div className="section-full mobile-page-padding latest-blog-wrap p-t80 p-b30 square_shape1">
@@ -172,3 +173,4 @@ export const Arrays = () => {
     </>
   );
 };
+export default Arrays;

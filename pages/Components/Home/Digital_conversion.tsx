@@ -1,4 +1,5 @@
-export const Digital_conversion = () => {
+import React from "react";
+const Digital_conversion = () => {
   return (
     <>
       <div
@@ -121,3 +122,4 @@ export const Digital_conversion = () => {
     </>
   );
 };
+export default Digital_conversion;
