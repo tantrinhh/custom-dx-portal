@@ -1,5 +1,3 @@
-import React from "react";
-
 export const Support = () => {
   return (
     <div className="section-full mobile-page-padding our-service-wrap  p-b50  square_shape2">
