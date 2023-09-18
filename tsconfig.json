@@ -17,6 +17,23 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "pages/api/hello.js",
+    "pages/Components/Home/Welcome_wrapper.jsx",
+    "pages/Components/Home/Support.jsx",
+    "pages/Components/Home/Story.jsx",
+    "pages/Components/Home/Problem.jsx",
+    "pages/Components/Home/Digital_conversion.jsx",
+    "pages/Components/Home/Arrays.jsx",
+    "pages/index.jsx",
+    "pages/_document.jsx",
+    "pages/_app.jsx",
+    "pages/Components/Layout/Layout.jsx",
+    "pages/Components/Layout/Header.jsx",
+    "pages/Components/Layout/Footer.jsx"
+  ],
   "exclude": ["node_modules"]
 }
