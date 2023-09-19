@@ -1,3 +1,4 @@
+import React from "react";
 import Support from "../Components/Home/Support";
 import Digital_conversion from "../Components/Home/Digital_conversion";
 import Story from "../Components/Home/Story";
@@ -6,10 +7,10 @@ import Arrays from "../Components/Home/Arrays";
 import Welcome_wrapper from "../Components/Home/Welcome_wrapper";
 import LayoutPage from "../Components/Layout/Layout";
 
-const Homee = () => {
+const KnowledgePage = () => {
   return (
     <>
-      <LayoutPage title={"Trang chủ | Chuyển đổi số quốc gia"}>
+      <LayoutPage title={" Tri thức | Chuyển đổi số quốc gia"}>
         <div className="page-wraper">
           <div className="page-content">
             <Welcome_wrapper />
@@ -30,4 +31,5 @@ const Homee = () => {
     </>
   );
 };
-export default Homee;
+
+export default KnowledgePage;

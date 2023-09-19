@@ -1,5 +1,11 @@
+import Homee from "./home";
+
 const Home = () => {
-  return <></>;
+  return (
+    <>
+      <Homee />
+    </>
+  );
 };
 
 export default Home;
