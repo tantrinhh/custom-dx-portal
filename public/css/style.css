@@ -8090,10 +8090,7 @@ HEADER (top part of page)
   background-color: #222;
   color: #fff;
 }
-.appint-btn img {
-  padding-left: 8px;
-  padding-right: 2px;
-}
+
 .header-style-1.header-dark-1 .appint-btn a {
   border: 1px solid #000;
 }
