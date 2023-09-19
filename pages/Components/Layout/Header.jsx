@@ -1,17 +1,9 @@
 import Link from "next/link";
 import React from "react";
+import { useRouter } from "next/router";
 
 export default function Header() {
-  const headerNav = [
-    { link: "/#", title: "Trang chủ" },
-    { link: "/vanban", title: "Văn bản" },
-    { link: "/trithuc", title: "Tri thức" },
-    { link: "/solieu", title: "Số liệu" },
-    { link: "/hoidap", title: "Hỏi đáp" },
-    { link: "/hienke", title: "Hiến kế" },
-    { link: "/thongbao", title: "Thông báo" },
-  ];
-
+  const router = useRouter();
   return (
     <header className="site-header header-style-1 mobile-sider-drawer-menu">
       <div className="top-bar bg-gray">
@@ -197,13 +189,33 @@ export default function Header() {
             {/* MAIN Vav */}
             <div className="header-nav navbar-collapse collapse">
               <ul className=" nav navbar-nav">
-                {headerNav.map((item) => {
-                  return (
-                    <li>
-                      <Link href={item.link}>{item.title}</Link>
-                    </li>
-                  );
-                })}
+                <li className={router.pathname === "/home" ? "active" : ""}>
+                  <Link href="/home">Trang chủ</Link>
+                </li>
+                <li className={router.pathname === "/document" ? "active" : ""}>
+                  <Link href="/document">Văn bản</Link>
+                </li>
+                <li
+                  className={router.pathname === "/knowledge" ? "active" : ""}
+                >
+                  <Link href="/knowledge">Tri thức</Link>
+                </li>
+                <li className={router.pathname === "/data" ? "active" : ""}>
+                  <Link href="/data">Số liệu</Link>
+                </li>
+                <li className={router.pathname === "/hoidap" ? "active" : ""}>
+                  <Link href="/hoidap">Hỏi đáp</Link>
+                </li>
+                <li className={router.pathname === "/hienke" ? "active" : ""}>
+                  <Link href="/hienke">Hiến kế</Link>
+                </li>
+                <li
+                  className={
+                    router.pathname === "/notification" ? "active" : ""
+                  }
+                >
+                  <Link href="/notification">Thông báo</Link>
+                </li>
               </ul>
             </div>
           </div>
