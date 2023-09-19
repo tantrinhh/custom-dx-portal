@@ -43,7 +43,7 @@ export default function Document() {
           type="text/css"
           href="css/skin/skin-1.css"
         />
-
+        {/* <link rel="stylesheet" type="text/css" href="css/switcher.css" /> */}
         <link
           rel="stylesheet"
           type="text/css"
@@ -80,7 +80,7 @@ export default function Document() {
         <script src="js/custom.js"></script>
         <script src="js/shortcode.js"></script>
         <script src="js/jquery.bgscroll.js"></script>
-
+        {/* <script src="js/switcher.js"></script> */}
         <script src="plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
         <script src="plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
 

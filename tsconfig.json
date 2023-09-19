@@ -1,39 +1,28 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": true,
+    "strict": false,
     "noEmit": true,
+    "incremental": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
-    "paths": {
-      "@/*": ["./*"]
-    }
+    "jsx": "preserve"
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx",
-    "pages/api/hello.js",
-    "pages/Components/Home/Welcome_wrapper.jsx",
-    "pages/Components/Home/Support.jsx",
-    "pages/Components/Home/Story.jsx",
-    "pages/Components/Home/Problem.jsx",
-    "pages/Components/Home/Digital_conversion.jsx",
-    "pages/Components/Home/Arrays.jsx",
-    "pages/index.jsx",
-    "pages/_document.jsx",
-    "pages/_app.jsx",
-    "pages/Components/Layout/Layout.jsx",
-    "pages/Components/Layout/Header.jsx",
-    "pages/Components/Layout/Footer.jsx"
+    "**/*.tsx"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }
