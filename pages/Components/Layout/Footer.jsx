@@ -1,8 +1,11 @@
 import React from "react";
+import Homee from "../../home";
+import Home_page from "../Home/Home_page";
 
 const Footer = () => {
   return (
     <>
+      <Home_page />
       <footer className="site-footer footer-large  footer-dark	footer-wide">
         <div className="container">
           <div

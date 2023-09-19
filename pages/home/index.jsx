@@ -5,28 +5,12 @@ import Problem from "../Components/Home/Problem";
 import Arrays from "../Components/Home/Arrays";
 import Welcome_wrapper from "../Components/Home/Welcome_wrapper";
 import LayoutPage from "../Components/Layout/Layout";
+import PageTitle from "../Components/TitlePage";
 
 const Homee = () => {
   return (
     <>
-      <LayoutPage title={"Trang chủ | Chuyển đổi số quốc gia"}>
-        <div className="page-wraper">
-          <div className="page-content">
-            <Welcome_wrapper />
-            <Support />
-            <Digital_conversion />
-
-            <Story />
-
-            <Problem />
-
-            <Arrays />
-          </div>
-          <button className="scroltop">
-            <span className="fa fa-angle-up  relative" id="btn-vibrate" />
-          </button>
-        </div>
-      </LayoutPage>
+      <PageTitle title="Trang chủ | Chuyển đổi số quốc gia" />
     </>
   );
 };
