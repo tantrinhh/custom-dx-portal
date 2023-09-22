@@ -1,3 +1,4 @@
+import { FormattedMessage } from "react-intl";
 import React from "react";
 const Digital_conversion = () => {
   return (
@@ -15,9 +16,15 @@ const Digital_conversion = () => {
               <div className="mt-separator">
                 <h2 className="text-white text-uppercase sep-line-one ">
                   <span className="font-weight-300 site-text-primary">
-                    Cục{" "}
+                    <FormattedMessage
+                      id="only"
+                      values={{ b: (chunks) => <b>{chunks}</b> }}
+                    />{" "}
                   </span>{" "}
-                  Chuyển đổi số Quốc gia
+                  <FormattedMessage
+                    id="title1.conversion"
+                    values={{ b: (chunks) => <b>{chunks}</b> }}
+                  />{" "}
                 </h2>
               </div>
             </div>
@@ -88,20 +95,22 @@ const Digital_conversion = () => {
                 <div className="about-home-right bg-white p-a30">
                   <h4 className="m-t0">
                     <span className="font-weight-100" />
-                    Cục Chuyển đổi số quốc gia
+                    <FormattedMessage
+                      id="title2.conversion"
+                      values={{ b: (chunks) => <b>{chunks}</b> }}
+                    />
                   </h4>
                   <p>
-                    Cục Chuyển đổi số quốc gia là tổ chức trực thuộc Bộ Thông
-                    tin và Truyền thông, thực hiện chức năng tham mưu giúp Bộ
-                    trưởng quản lý nhà nước và tổ chức thực thi pháp luật về ứng
-                    dụng công nghệ thông tin trong cơ quan nhà nước, phát triển
-                    Chính phủ điện tử, Chính phủ số; là đầu mối tổng hợp, tham
-                    mưu, điều phối, thúc đẩy chuyển đổi số quốc gia.
+                    <FormattedMessage
+                      id="text1.conversion"
+                      values={{ b: (chunks) => <b>{chunks}</b> }}
+                    />
                   </p>
                   <p>
-                    Cục Chuyển đổi số quốc gia có tư cách pháp nhân, có con dấu
-                    và tài khoản riêng theo quy định của pháp luật, có trụ sở
-                    chính đặt tại thành phố Hà Nội.
+                    <FormattedMessage
+                      id="text2.conversion"
+                      values={{ b: (chunks) => <b>{chunks}</b> }}
+                    />
                   </p>
                   <div className="text-right">
                     <a
@@ -109,7 +118,10 @@ const Digital_conversion = () => {
                       className="site-button-link"
                       data-hover="Xem Chi tiết"
                     >
-                      Xem chi tiết
+                      <FormattedMessage
+                        id="see.conversion"
+                        values={{ b: (chunks) => <b>{chunks}</b> }}
+                      />
                       <i className="fa fa-angle-right arrow-animation" />
                     </a>
                   </div>

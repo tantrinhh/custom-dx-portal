@@ -1,4 +1,5 @@
 import React from "react";
+import { FormattedMessage } from "react-intl";
 const Arrays = () => {
   return (
     <>
@@ -11,9 +12,15 @@ const Arrays = () => {
               <div className="mt-separator">
                 <h2 className="text-uppercase sep-line-one ">
                   <span className="font-weight-300 site-text-primary">
-                    Các mảng
+                    <FormattedMessage
+                      id="title1.ingredient"
+                      values={{ b: (chunks) => <b>{chunks}</b> }}
+                    />
                   </span>{" "}
-                  Chuyển đổi số
+                  <FormattedMessage
+                    id="title1.1.ingredient"
+                    values={{ b: (chunks) => <b>{chunks}</b> }}
+                  />
                 </h2>
               </div>
             </div>
@@ -44,13 +51,18 @@ const Arrays = () => {
                       </div>
                       <div className="mt-post-title ">
                         <h4 className="post-title m-b0">
-                          Tuần lễ Chuyển đổi số
+                          <FormattedMessage
+                            id="content1.ingredient"
+                            values={{ b: (chunks) => <b>{chunks}</b> }}
+                          />
                         </h4>
                       </div>
                       <div className="mt-post-text">
                         <p>
-                          Tuần lễ Chuyển đổi số - Huế 2022 được tổ chức nhằm xây
-                          dựng chiến lược CĐS giai đoạn mới.
+                          <FormattedMessage
+                            id="text1.ingredient"
+                            values={{ b: (chunks) => <b>{chunks}</b> }}
+                          />
                         </p>
                       </div>
                       <div className="readmore-line">
@@ -60,7 +72,10 @@ const Arrays = () => {
                             className="site-button-link"
                             data-hover="Xem Chi tiết"
                           >
-                            Xem Chi tiết{" "}
+                            <FormattedMessage
+                              id="see.ingredient"
+                              values={{ b: (chunks) => <b>{chunks}</b> }}
+                            />{" "}
                             <i className="fa fa-angle-right arrow-animation" />
                           </a>
                         </span>
@@ -91,13 +106,18 @@ const Arrays = () => {
                       </div>
                       <div className="mt-post-title ">
                         <h4 className="post-title m-b0">
-                          Nhận thức về Chuyển đổi số
+                          <FormattedMessage
+                            id="content2.ingredient"
+                            values={{ b: (chunks) => <b>{chunks}</b> }}
+                          />
                         </h4>
                       </div>
                       <div className="mt-post-text">
                         <p>
-                          Các đài truyền hình đã và đang nỗ lực đẩy mạnh sản
-                          xuất chương trình liên quan đến “Chuyển đổi số”.
+                          <FormattedMessage
+                            id="text2.ingredient"
+                            values={{ b: (chunks) => <b>{chunks}</b> }}
+                          />
                         </p>
                       </div>
                       <div className="readmore-line">
@@ -107,7 +127,10 @@ const Arrays = () => {
                             className="site-button-link"
                             data-hover="Xem Chi tiết"
                           >
-                            Xem Chi tiết{" "}
+                            <FormattedMessage
+                              id="see.ingredient"
+                              values={{ b: (chunks) => <b>{chunks}</b> }}
+                            />{" "}
                             <i className="fa fa-angle-right arrow-animation" />
                           </a>
                         </span>
@@ -138,13 +161,18 @@ const Arrays = () => {
                       </div>
                       <div className="mt-post-title ">
                         <h4 className="post-title m-b0">
-                          Phát triển hạ tầng số
+                          <FormattedMessage
+                            id="content3.ingredient"
+                            values={{ b: (chunks) => <b>{chunks}</b> }}
+                          />
                         </h4>
                       </div>
                       <div className="mt-post-text">
                         <p>
-                          Phát triển, xây dựng hạ tầng số đồng bộ, hiện đại phục
-                          vụ Chính phủ số là xu hướng của nhiều quốc gia.
+                          <FormattedMessage
+                            id="text3.ingredient"
+                            values={{ b: (chunks) => <b>{chunks}</b> }}
+                          />
                         </p>
                       </div>
                       <div className="readmore-line">
@@ -154,7 +182,10 @@ const Arrays = () => {
                             className="site-button-link"
                             data-hover="Xem Chi tiết"
                           >
-                            Xem Chi tiết{" "}
+                            <FormattedMessage
+                              id="see.ingredient"
+                              values={{ b: (chunks) => <b>{chunks}</b> }}
+                            />{" "}
                             <i className="fa fa-angle-right arrow-animation" />
                           </a>
                         </span>

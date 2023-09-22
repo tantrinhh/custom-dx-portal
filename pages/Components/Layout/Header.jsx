@@ -1,9 +1,12 @@
 import Link from "next/link";
 import React from "react";
 import { useRouter } from "next/router";
+import { FormattedMessage } from "react-intl";
 
 export default function Header() {
   const router = useRouter();
+  const { locale } = useRouter();
+
   return (
     <header className="site-header header-style-1 mobile-sider-drawer-menu">
       <div className="top-bar bg-gray">
@@ -13,7 +16,13 @@ export default function Header() {
               <ul className="list-unstyled e-p-bx pull-right">
                 <li>
                   <i className="fa fa-bookmark" />
-                  Chương trình Chuyển đổi số quốc gia
+
+                  <a href="contact-1.html" className="site-button">
+                    <FormattedMessage
+                      id="name"
+                      values={{ b: (chunks) => <b>{chunks}</b> }}
+                    />
+                  </a>
                 </li>
                 <li>
                   <i className="fa fa-phone" />
@@ -26,14 +35,29 @@ export default function Header() {
               </ul>
             </div>
             <div className="mt-topbar-right">
-              {/* Thêm lá cờ việt nam */}
-              <div className="appint-btn">
-                <a href="contact-1.html" className="site-button">
-                  Đăng nhập
-                </a>
-                <img src="images/icon/vn.png" alt="" />
-                <img src="images/icon/us.png" alt="" />
-              </div>
+              <Link href="/login" className="site-button">
+                <FormattedMessage
+                  id="login"
+                  values={{ b: (chunks) => <b>{chunks}</b> }}
+                />
+              </Link>
+              {locale !== "vi" ? (
+                <Link
+                  className="bg-white min-w-max max-h-max"
+                  href={"/"}
+                  locale="vi"
+                >
+                  <img src="images/icon/vn.png" className="" alt="" />
+                </Link>
+              ) : (
+                <Link
+                  className="bg-white min-w-max max-h-max p-0 "
+                  href={"/"}
+                  locale="en"
+                >
+                  <img src="images/icon/us.png" className="" alt="" />
+                </Link>
+              )}
             </div>
           </div>
         </div>
@@ -190,31 +214,70 @@ export default function Header() {
             <div className="header-nav navbar-collapse collapse">
               <ul className=" nav navbar-nav">
                 <li className={router.pathname === "/home" ? "active" : ""}>
-                  <Link href="/home">Trang chủ</Link>
+                  <Link href="/home">
+                    <FormattedMessage
+                      id="homepage"
+                      values={{ b: (chunks) => <b>{chunks}</b> }}
+                    />
+                  </Link>
                 </li>
                 <li className={router.pathname === "/document" ? "active" : ""}>
-                  <Link href="/document">Văn bản</Link>
+                  <Link href="/document">
+                    {" "}
+                    <FormattedMessage
+                      id="text"
+                      values={{ b: (chunks) => <b>{chunks}</b> }}
+                    />
+                  </Link>
                 </li>
                 <li
                   className={router.pathname === "/knowledge" ? "active" : ""}
                 >
-                  <Link href="/knowledge">Tri thức</Link>
+                  <Link href="/knowledge">
+                    {" "}
+                    <FormattedMessage
+                      id="knowledge"
+                      values={{ b: (chunks) => <b>{chunks}</b> }}
+                    />
+                  </Link>
                 </li>
                 <li className={router.pathname === "/data" ? "active" : ""}>
-                  <Link href="/data">Số liệu</Link>
+                  <Link href="/data">
+                    <FormattedMessage
+                      id="data"
+                      values={{ b: (chunks) => <b>{chunks}</b> }}
+                    />
+                  </Link>
                 </li>
                 <li className={router.pathname === "/hoidap" ? "active" : ""}>
-                  <Link href="/hoidap">Hỏi đáp</Link>
+                  <Link href="/hoidap">
+                    <FormattedMessage
+                      id="aks"
+                      values={{ b: (chunks) => <b>{chunks}</b> }}
+                    />
+                  </Link>
                 </li>
                 <li className={router.pathname === "/hienke" ? "active" : ""}>
-                  <Link href="/hienke">Hiến kế</Link>
+                  <Link href="/hienke">
+                    {" "}
+                    <FormattedMessage
+                      id="constitution"
+                      values={{ b: (chunks) => <b>{chunks}</b> }}
+                    />
+                  </Link>
                 </li>
                 <li
                   className={
                     router.pathname === "/notification" ? "active" : ""
                   }
                 >
-                  <Link href="/notification">Thông báo</Link>
+                  <Link href="/notification">
+                    {" "}
+                    <FormattedMessage
+                      id="notification"
+                      values={{ b: (chunks) => <b>{chunks}</b> }}
+                    />
+                  </Link>
                 </li>
               </ul>
             </div>

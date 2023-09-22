@@ -1,4 +1,5 @@
 import React from "react";
+import { FormattedMessage } from "react-intl";
 const Problem = () => {
   return (
     <>
@@ -16,9 +17,15 @@ const Problem = () => {
               <div className="mt-separator">
                 <h2 className="text-white text-uppercase sep-line-one ">
                   <span className="font-weight-300 site-text-primary">
-                    Bài toán
+                    <FormattedMessage
+                      id="title1.problem"
+                      values={{ b: (chunks) => <b>{chunks}</b> }}
+                    />
                   </span>{" "}
-                  Chuyển đổi số
+                  <FormattedMessage
+                    id="title1.1.problem"
+                    values={{ b: (chunks) => <b>{chunks}</b> }}
+                  />
                 </h2>
               </div>
             </div>
@@ -33,17 +40,22 @@ const Problem = () => {
                     <ul className="filter-navigation masonry-filter text-uppercase">
                       <li className="active">
                         <a data-filter="*" data-hover="All" href="#">
-                          Tất cả
+                          <FormattedMessage
+                            id="title2.problem"
+                            values={{ b: (chunks) => <b>{chunks}</b> }}
+                          />
                         </a>
                       </li>
                       <li>
                         <a
                           data-filter=".cat-1"
-                          data-hover="Lĩnh
-                                              vực theo chiều ngang"
+                          data-hover="Lĩnh vực theo chiều ngang"
                           href="javascript:;"
                         >
-                          Lĩnh vực theo chiều ngang
+                          <FormattedMessage
+                            id="link1.problem"
+                            values={{ b: (chunks) => <b>{chunks}</b> }}
+                          />
                         </a>
                       </li>
                       <li>
@@ -52,7 +64,10 @@ const Problem = () => {
                           data-hover="Lĩnh vực ưu tiên CĐS QG"
                           href="javascript:;"
                         >
-                          Lĩnh vực ưu tiên CĐS QG
+                          <FormattedMessage
+                            id="link2.problem"
+                            values={{ b: (chunks) => <b>{chunks}</b> }}
+                          />
                         </a>
                       </li>
                       <li>
@@ -62,7 +77,10 @@ const Problem = () => {
 "
                           href="javascript:;"
                         >
-                          Trụ cột của CĐS QG
+                          <FormattedMessage
+                            id="link3.problem"
+                            values={{ b: (chunks) => <b>{chunks}</b> }}
+                          />
                         </a>
                       </li>
                       <li>
@@ -71,7 +89,10 @@ const Problem = () => {
                           data-hover="Đối tượng sử dụng"
                           href="javascript:;"
                         >
-                          Đối tượng sử dụng
+                          <FormattedMessage
+                            id="link4.problem"
+                            values={{ b: (chunks) => <b>{chunks}</b> }}
+                          />
                         </a>
                       </li>
                       <li>
@@ -81,7 +102,10 @@ const Problem = () => {
 "
                           href="javascript:;"
                         >
-                          Theo cấp hành chính
+                          <FormattedMessage
+                            id="link5.problem"
+                            values={{ b: (chunks) => <b>{chunks}</b> }}
+                          />
                         </a>
                       </li>
                     </ul>
@@ -99,7 +123,10 @@ const Problem = () => {
                   </div>
                   <div className="mt-info  p-t20 text-white">
                     <h4 className="mt-tilte m-b10 m-t0">
-                      Chuyển đổi lên hạ tầng và điện toán đám mây
+                      <FormattedMessage
+                        id="text1.problem"
+                        values={{ b: (chunks) => <b>{chunks}</b> }}
+                      />
                     </h4>
                   </div>
                   <a href="project-detail.html" />
@@ -116,7 +143,10 @@ const Problem = () => {
                   </div>
                   <div className="mt-info  p-t20 text-white">
                     <h4 className="mt-tilte m-b10 m-t0">
-                      Kho học liệu mở cho giáo dục phổ thông
+                      <FormattedMessage
+                        id="text2.problem"
+                        values={{ b: (chunks) => <b>{chunks}</b> }}
+                      />
                     </h4>
                   </div>
                   <a href="project-detail.html" />
@@ -133,7 +163,15 @@ const Problem = () => {
                   </div>
                   <div className="mt-info  p-t20 text-white">
                     <h4 className="mt-tilte m-b10 m-t0">
-                      CĐS 3 trụ cột: Chính quyền số, Kinh tế số &amp; Xã hội số
+                      <FormattedMessage
+                        id="text3.problem"
+                        values={{ b: (chunks) => <b>{chunks}</b> }}
+                      />{" "}
+                      &amp;{" "}
+                      <FormattedMessage
+                        id="text3.1.problem"
+                        values={{ b: (chunks) => <b>{chunks}</b> }}
+                      />
                     </h4>
                   </div>
                   <a href="project-detail.html" />
@@ -150,7 +188,10 @@ const Problem = () => {
                   </div>
                   <div className="mt-info  p-t20 text-white">
                     <h4 className="mt-tilte m-b10 m-t0">
-                      Giải pháp công nghệ AI nhận dạng cảm xúc
+                      <FormattedMessage
+                        id="text4.problem"
+                        values={{ b: (chunks) => <b>{chunks}</b> }}
+                      />
                     </h4>
                   </div>
                   <a href="project-detail.html" />
@@ -167,7 +208,10 @@ const Problem = () => {
                   </div>
                   <div className="mt-info  p-t20 text-white">
                     <h4 className="mt-tilte m-b10 m-t0">
-                      Giải pháp công nghệ thị giác máy tính
+                      <FormattedMessage
+                        id="text5.problem"
+                        values={{ b: (chunks) => <b>{chunks}</b> }}
+                      />
                     </h4>
                   </div>
                   <a href="project-detail.html" />
@@ -184,7 +228,10 @@ const Problem = () => {
                   </div>
                   <div className="mt-info  p-t20 text-white">
                     <h4 className="mt-tilte m-b10 m-t0">
-                      Giải pháp ứng dụng blockchain trong digital twin
+                      <FormattedMessage
+                        id="text6.problem"
+                        values={{ b: (chunks) => <b>{chunks}</b> }}
+                      />
                     </h4>
                   </div>
                   <a href="project-detail.html" />
@@ -201,7 +248,10 @@ const Problem = () => {
                   </div>
                   <div className="mt-info  p-t20 text-white">
                     <h4 className="mt-tilte m-b10 m-t0">
-                      Trung tâm tích hợp dữ liệu chuyên ngành hàng hải
+                      <FormattedMessage
+                        id="text7.problem"
+                        values={{ b: (chunks) => <b>{chunks}</b> }}
+                      />
                     </h4>
                   </div>
                   <a href="project-detail.html" />
@@ -218,7 +268,10 @@ const Problem = () => {
                   </div>
                   <div className="mt-info  p-t20 text-white">
                     <h4 className="mt-tilte m-b10 m-t0">
-                      Phần mềm AI hỗ trợ phân tích ảnh nhiễm sắc thể
+                      <FormattedMessage
+                        id="text8.problem"
+                        values={{ b: (chunks) => <b>{chunks}</b> }}
+                      />
                     </h4>
                   </div>
                   <a href="project-detail.html" />
@@ -235,7 +288,10 @@ const Problem = () => {
                   </div>
                   <div className="mt-info  p-t20 text-white">
                     <h4 className="mt-tilte m-b10 m-t0">
-                      Chuyển đổi số nâng cao văn hóa đọc cho người dân
+                      <FormattedMessage
+                        id="text9.problem"
+                        values={{ b: (chunks) => <b>{chunks}</b> }}
+                      />
                     </h4>
                   </div>
                   <a href="project-detail.html" />
@@ -252,7 +308,10 @@ const Problem = () => {
                   </div>
                   <div className="mt-info  p-t20 text-white">
                     <h4 className="mt-tilte m-b10 m-t0">
-                      Nguồn nhân lực triển khai thực hiện chuyển đổi số
+                      <FormattedMessage
+                        id="text10.problem"
+                        values={{ b: (chunks) => <b>{chunks}</b> }}
+                      />
                     </h4>
                   </div>
                   <a href="project-detail.html" />

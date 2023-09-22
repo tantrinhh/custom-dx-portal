@@ -1,6 +1,8 @@
 import React from "react";
-import Homee from "../../home";
+
 import Home_page from "../Home/Home_page";
+
+import { FormattedMessage } from "react-intl";
 
 const Footer = () => {
   return (
@@ -19,11 +21,16 @@ const Footer = () => {
               <div className="col-lg-8 col-md-6">
                 <div className="call-to-action-left text-black">
                   <h4 className="text-uppercase m-b10 m-t0">
-                    CỔNG THÔNG TIN ĐIỆN TỬ CHUYỂN ĐỔI SỐ QUỐC GIA
+                    <FormattedMessage
+                      id="content1.footer"
+                      values={{ b: (chunks) => <b>{chunks}</b> }}
+                    />
                   </h4>
                   <span>
-                    Cung cấp các thông tin chính thống về chương trình Chuyển
-                    đổi số quốc gia
+                    <FormattedMessage
+                      id="content2.footer"
+                      values={{ b: (chunks) => <b>{chunks}</b> }}
+                    />
                   </span>
                 </div>
               </div>
@@ -71,8 +78,10 @@ const Footer = () => {
                     </a>
                   </div>
                   <p className="max-w400">
-                    Cổng thông tin Chuyển đổi số quốc gia cung cấp các thông tin
-                    chính thống về chương trình Chuyển đổi số quốc gia.
+                    <FormattedMessage
+                      id="content3.footer"
+                      values={{ b: (chunks) => <b>{chunks}</b> }}
+                    />
                   </p>
                   <ul className="social-icons  mt-social-links">
                     <li>
@@ -105,33 +114,79 @@ const Footer = () => {
               {/* RESENT POST */}
               <div className="col-lg-4 col-md-6 col-sm-6">
                 <div className="widget widget_address_outer">
-                  <h4 className="widget-title">Liên hệ</h4>
+                  <h4 className="widget-title">
+                    <FormattedMessage
+                      id="content6.footer"
+                      values={{ b: (chunks) => <b>{chunks}</b> }}
+                    />
+                  </h4>
                   <ul className="widget_address">
                     <li>
-                      Địa chỉ: Tòa nhà VNTA, 68 Dương Đình Nghệ, Cầu Giấy, Hà
-                      Nội
+                      <FormattedMessage
+                        id="content7.footer"
+                        values={{ b: (chunks) => <b>{chunks}</b> }}
+                      />
                     </li>
-                    <li>Số điện thoại: 024 3782 1766</li>
-                    <li>Email: ubqg.cds@mic.gov.vn</li>
+                    <li>
+                      {" "}
+                      <FormattedMessage
+                        id="content8.footer"
+                        values={{ b: (chunks) => <b>{chunks}</b> }}
+                      />
+                    </li>
+                    <li>
+                      <FormattedMessage
+                        id="content9.footer"
+                        values={{ b: (chunks) => <b>{chunks}</b> }}
+                      />
+                    </li>
                   </ul>
                 </div>
               </div>
               {/* USEFUL LINKS */}
               <div className="col-lg-4 col-md-6 col-sm-6 footer-col-3">
                 <div className="widget widget_services inline-links">
-                  <h4 className="widget-title">Tìm kiếm</h4>
+                  <h4 className="widget-title">
+                    {" "}
+                    <FormattedMessage
+                      id="content6.footer"
+                      values={{ b: (chunks) => <b>{chunks}</b> }}
+                    />
+                  </h4>
                   <ul>
                     <li>
-                      <a href="about-1.html">Giới thiệu</a>
+                      <a href="about-1.html">
+                        <FormattedMessage
+                          id="content7.footer"
+                          values={{ b: (chunks) => <b>{chunks}</b> }}
+                        />
+                      </a>
                     </li>
                     <li>
-                      <a href="project-grid.html">Hỗ trợ</a>
+                      <a href="project-grid.html">
+                        {" "}
+                        <FormattedMessage
+                          id="content8.footer"
+                          values={{ b: (chunks) => <b>{chunks}</b> }}
+                        />
+                      </a>
                     </li>
                     <li>
-                      <a href="blog-grid.html">Hoạt động</a>
+                      <a href="blog-grid.html">
+                        {" "}
+                        <FormattedMessage
+                          id="content9.footer"
+                          values={{ b: (chunks) => <b>{chunks}</b> }}
+                        />
+                      </a>
                     </li>
                     <li>
-                      <a href="contact-1.html">Liên hệ</a>
+                      <a href="contact-1.html">
+                        <FormattedMessage
+                          id="content10.footer"
+                          values={{ b: (chunks) => <b>{chunks}</b> }}
+                        />
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -146,7 +201,10 @@ const Footer = () => {
             <div className="row">
               <div className="mt-footer-bot-center">
                 <span className="copyrights-text">
-                  © 2023 Chuyển đổi số quốc gia
+                  <FormattedMessage
+                    id="content11.footer"
+                    values={{ b: (chunks) => <b>{chunks}</b> }}
+                  />
                 </span>
               </div>
             </div>

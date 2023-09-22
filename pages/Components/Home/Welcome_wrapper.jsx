@@ -1,4 +1,5 @@
 import React from "react";
+import { FormattedMessage } from "react-intl";
 const Welcome_wrapper = () => {
   return (
     <>
@@ -118,7 +119,10 @@ const Welcome_wrapper = () => {
               >
                 <div>
                   10.10.2023 <br />
-                  CHUYỂN ĐỔI SỐ QUỐC GIA
+                  <FormattedMessage
+                    id="title.home.welcome_wrapper"
+                    values={{ b: (chunks) => <b>{chunks}</b> }}
+                  />
                 </div>
               </div>
 

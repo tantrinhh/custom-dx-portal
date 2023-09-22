@@ -1,4 +1,5 @@
 import React from "react";
+import { FormattedMessage } from "react-intl";
 const Story = () => {
   return (
     <>
@@ -16,9 +17,15 @@ const Story = () => {
                 <div className="mt-separator">
                   <h2 className="text-uppercase sep-line-one ">
                     <span className="font-weight-300 site-text-primary">
-                      Câu chuyện{" "}
+                      <FormattedMessage
+                        id="title1.recital"
+                        values={{ b: (chunks) => <b>{chunks}</b> }}
+                      />{" "}
                     </span>{" "}
-                    chuyển đổi số
+                    <FormattedMessage
+                      id="title1.1.recital"
+                      values={{ b: (chunks) => <b>{chunks}</b> }}
+                    />
                   </h2>
                 </div>
               </div>
@@ -33,37 +40,66 @@ const Story = () => {
                   }}
                 >
                   <h3 className="m-t0">
-                    <span className="font-weight-100"> Câu chuyện</span>
-                    <br /> chuyển đổi số
+                    <span className="font-weight-100">
+                      {" "}
+                      <FormattedMessage
+                        id="title1.recital"
+                        values={{ b: (chunks) => <b>{chunks}</b> }}
+                      />
+                    </span>
+                    <br />{" "}
+                    <FormattedMessage
+                      id="title1.1.recital"
+                      values={{ b: (chunks) => <b>{chunks}</b> }}
+                    />
                   </h3>
                   <p>
-                    “Internet là một mạng lưới phi tập trung với sự sáng tạo
-                    không giới hạn. Và chuyển đổi số chính là bước tiếp theo của
-                    cuộc cách mạng về phi tập trung hóa”
+                    <FormattedMessage
+                      id="text1.recital"
+                      values={{ b: (chunks) => <b>{chunks}</b> }}
+                    />
                   </p>
                   <ul className="list-angle-right anchor-line">
                     <li>
                       <a href="services.html">
-                        Đô thị thông minh và Chính quyền số
+                        <FormattedMessage
+                          id="link1.recital"
+                          values={{ b: (chunks) => <b>{chunks}</b> }}
+                        />
                       </a>
                     </li>
                     <li>
                       <a href="services.html">
-                        Cơ sở dữ liệu quốc gia về dân cư
+                        <FormattedMessage
+                          id="link2.recital"
+                          values={{ b: (chunks) => <b>{chunks}</b> }}
+                        />
                       </a>
                     </li>
                     <li>
                       <a href="services.html">
-                        Hệ thống Hội nghị giao ban điện tử
+                        <FormattedMessage
+                          id="link3.recital"
+                          values={{ b: (chunks) => <b>{chunks}</b> }}
+                        />
                       </a>
                     </li>
                     <li>
                       <a href="services.html">
-                        Khoa học, công nghệ đổi mới sáng tạo
+                        <FormattedMessage
+                          id="link4.recital"
+                          values={{ b: (chunks) => <b>{chunks}</b> }}
+                        />
                       </a>
                     </li>
                     <li>
-                      <a href="services.html">Cấp hộ chiếu phổ thông</a>
+                      <a href="services.html">
+                        {" "}
+                        <FormattedMessage
+                          id="link5.recital"
+                          values={{ b: (chunks) => <b>{chunks}</b> }}
+                        />
+                      </a>
                     </li>
                   </ul>
                   <div className="text-right">
@@ -72,7 +108,10 @@ const Story = () => {
                       className="site-button-link"
                       data-hover="Xem Chi tiết"
                     >
-                      Xem Chi tiết
+                      <FormattedMessage
+                        id="see.recital"
+                        values={{ b: (chunks) => <b>{chunks}</b> }}
+                      />
                       <i className="fa fa-angle-right arrow-animation" />
                     </a>
                   </div>

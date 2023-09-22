@@ -1,3 +1,4 @@
+import { FormattedMessage } from "react-intl";
 import React from "react";
 const Support = () => {
   return (
@@ -16,16 +17,32 @@ const Support = () => {
                 <div className="mt-separator">
                   <h2 className="text-white text-uppercase sep-line-one ">
                     <span className="font-weight-300 site-text-primary">
-                      Nền tảng
+                      <FormattedMessage
+                        id="base.support"
+                        values={{
+                          b: (chunks) => <b className="text-black">{chunks}</b>,
+                        }}
+                      />
                     </span>
-                    <b style={{ color: "black" }}> hỗ trợ</b>{" "}
+                    <b style={{ color: "black" }}>
+                      {" "}
+                      <FormattedMessage
+                        id="support.support"
+                        values={{
+                          b: (chunks) => <b className="text-black">{chunks}</b>,
+                        }}
+                      />{" "}
+                    </b>{" "}
                   </h2>
                 </div>
               </div>
               <h3 style={{ color: "black" }}>
-                Tham khảo danh sách các nền tảng hỗ trợ chuyển đổi số, phục vụ
-                công cuộc chuyển đổi số quốc gia: Chính phủ số, kinh tế số và xã
-                hội số.
+                <FormattedMessage
+                  id="text1.support"
+                  values={{
+                    b: (chunks) => <b className="text-black">{chunks}</b>,
+                  }}
+                />
               </h3>
             </div>
           </div>
@@ -48,18 +65,47 @@ const Support = () => {
 
                     <div className="icon-content">
                       <h4 className=" m-b25">
-                        Đánh giá &amp; xếp hạng chuyển đổi số
+                        <FormattedMessage
+                          id="text2.support"
+                          values={{
+                            b: (chunks) => (
+                              <b className="text-black">{chunks}</b>
+                            ),
+                          }}
+                        />{" "}
+                        &amp;{" "}
+                        <FormattedMessage
+                          id="text3.support"
+                          values={{
+                            b: (chunks) => (
+                              <b className="text-black">{chunks}</b>
+                            ),
+                          }}
+                        />
                       </h4>
                       <p>
-                        Đây là nội dung demo phục vụ cho việc đánh giá có phù
-                        hợp không.
+                        <FormattedMessage
+                          id="text4.support"
+                          values={{
+                            b: (chunks) => (
+                              <b className="text-black">{chunks}</b>
+                            ),
+                          }}
+                        />
                       </p>
                       <a
                         href="services.html"
                         className="site-button-link"
                         data-hover="Xem Chi tiết"
                       >
-                        Xem Chi tiết{" "}
+                        <FormattedMessage
+                          id="text5.see.support"
+                          values={{
+                            b: (chunks) => (
+                              <b className="text-black">{chunks}</b>
+                            ),
+                          }}
+                        />
                         <i className="fa fa-angle-right arrow-animation" />
                       </a>
                     </div>
@@ -80,18 +126,38 @@ const Support = () => {
                     </div>
                     <div className="icon-content">
                       <h4 className=" m-b25">
-                        Nền tảng học hỗ trợ học trực tuyến
+                        <FormattedMessage
+                          id="text6.support"
+                          values={{
+                            b: (chunks) => (
+                              <b className="text-black">{chunks}</b>
+                            ),
+                          }}
+                        />
                       </h4>
                       <p>
-                        Đây là nội dung demo phục vụ cho việc đánh giá có phù
-                        hợp không.
+                        <FormattedMessage
+                          id="text4.support"
+                          values={{
+                            b: (chunks) => (
+                              <b className="text-black">{chunks}</b>
+                            ),
+                          }}
+                        />
                       </p>
                       <a
                         href="services.html"
                         className="site-button-link"
                         data-hover="Xem Chi tiết"
                       >
-                        Xem Chi tiết{" "}
+                        <FormattedMessage
+                          id="text5.see.support"
+                          values={{
+                            b: (chunks) => (
+                              <b className="text-black">{chunks}</b>
+                            ),
+                          }}
+                        />
                         <i className="fa fa-angle-right arrow-animation" />
                       </a>
                     </div>
@@ -112,18 +178,38 @@ const Support = () => {
                     </div>
                     <div className="icon-content">
                       <h4 className=" m-b25">
-                        Nền tảng khảo sát đánh giá phân tích
+                        <FormattedMessage
+                          id="text8.support"
+                          values={{
+                            b: (chunks) => (
+                              <b className="text-black">{chunks}</b>
+                            ),
+                          }}
+                        />
                       </h4>
                       <p>
-                        Đây là nội dung demo phục vụ cho việc đánh giá có phù
-                        hợp không.
+                        <FormattedMessage
+                          id="text4.support"
+                          values={{
+                            b: (chunks) => (
+                              <b className="text-black">{chunks}</b>
+                            ),
+                          }}
+                        />
                       </p>
                       <a
                         href="services.html"
                         className="site-button-link"
                         data-hover="Xem Chi tiết"
                       >
-                        Xem Chi tiết{" "}
+                        <FormattedMessage
+                          id="text5.see.support"
+                          values={{
+                            b: (chunks) => (
+                              <b className="text-black">{chunks}</b>
+                            ),
+                          }}
+                        />{" "}
                         <i className="fa fa-angle-right arrow-animation" />
                       </a>
                     </div>
@@ -144,18 +230,38 @@ const Support = () => {
                     </div>
                     <div className="icon-content">
                       <h4 className=" m-b25">
-                        Nền tảng xã hội số và kinh tế số{" "}
+                        <FormattedMessage
+                          id="text9.support"
+                          values={{
+                            b: (chunks) => (
+                              <b className="text-black">{chunks}</b>
+                            ),
+                          }}
+                        />{" "}
                       </h4>
                       <p>
-                        Đây là nội dung demo phục vụ cho việc đánh giá có phù
-                        hợp không.
+                        <FormattedMessage
+                          id="text4.support"
+                          values={{
+                            b: (chunks) => (
+                              <b className="text-black">{chunks}</b>
+                            ),
+                          }}
+                        />
                       </p>
                       <a
                         href="services.html"
                         className="site-button-link"
                         data-hover="Xem Chi tiết"
                       >
-                        Xem Chi tiết{" "}
+                        <FormattedMessage
+                          id="text5.see.support"
+                          values={{
+                            b: (chunks) => (
+                              <b className="text-black">{chunks}</b>
+                            ),
+                          }}
+                        />{" "}
                         <i className="fa fa-angle-right arrow-animation" />
                       </a>
                     </div>
@@ -175,17 +281,40 @@ const Support = () => {
                       </span>
                     </div>
                     <div className="icon-content">
-                      <h4 className=" m-b25">Cẩm nang chuyển đổi số</h4>
+                      <h4 className=" m-b25">
+                        {" "}
+                        <FormattedMessage
+                          id="text10.support"
+                          values={{
+                            b: (chunks) => (
+                              <b className="text-black">{chunks}</b>
+                            ),
+                          }}
+                        />
+                      </h4>
                       <p>
-                        Đây là nội dung demo phục vụ cho việc đánh giá có phù
-                        hợp không.
+                        <FormattedMessage
+                          id="text4.support"
+                          values={{
+                            b: (chunks) => (
+                              <b className="text-black">{chunks}</b>
+                            ),
+                          }}
+                        />
                       </p>
                       <a
                         href="services.html"
                         className="site-button-link"
                         data-hover="Xem Chi tiết"
                       >
-                        Xem Chi tiết{" "}
+                        <FormattedMessage
+                          id="text5.see.support"
+                          values={{
+                            b: (chunks) => (
+                              <b className="text-black">{chunks}</b>
+                            ),
+                          }}
+                        />{" "}
                         <i className="fa fa-angle-right arrow-animation" />
                       </a>
                     </div>
@@ -206,18 +335,38 @@ const Support = () => {
                     </div>
                     <div className="icon-content">
                       <h4 className=" m-b25">
-                        SMEdx - Chuyển đổi số cho doanh nghiệp
+                        <FormattedMessage
+                          id="text11.support"
+                          values={{
+                            b: (chunks) => (
+                              <b className="text-black">{chunks}</b>
+                            ),
+                          }}
+                        />
                       </h4>
                       <p>
-                        Đây là nội dung demo phục vụ cho việc đánh giá có phù
-                        hợp không.
+                        <FormattedMessage
+                          id="text4.support"
+                          values={{
+                            b: (chunks) => (
+                              <b className="text-black">{chunks}</b>
+                            ),
+                          }}
+                        />
                       </p>
                       <a
                         href="services.html"
                         className="site-button-link"
                         data-hover="Xem Chi tiết"
                       >
-                        Xem Chi tiết{" "}
+                        <FormattedMessage
+                          id="text5.see.support"
+                          values={{
+                            b: (chunks) => (
+                              <b className="text-black">{chunks}</b>
+                            ),
+                          }}
+                        />{" "}
                         <i className="fa fa-angle-right arrow-animation" />
                       </a>
                     </div>
@@ -238,18 +387,38 @@ const Support = () => {
                     </div>
                     <div className="icon-content">
                       <h4 className=" m-b25">
-                        Cổng thông tin dữ liệu quốc gia
+                        <FormattedMessage
+                          id="text12.support"
+                          values={{
+                            b: (chunks) => (
+                              <b className="text-black">{chunks}</b>
+                            ),
+                          }}
+                        />
                       </h4>
                       <p>
-                        Đây là nội dung demo phục vụ cho việc đánh giá có phù
-                        hợp không.
+                        <FormattedMessage
+                          id="text4.support"
+                          values={{
+                            b: (chunks) => (
+                              <b className="text-black">{chunks}</b>
+                            ),
+                          }}
+                        />
                       </p>
                       <a
                         href="services.html"
                         className="site-button-link"
                         data-hover="Xem Chi tiết"
                       >
-                        Xem Chi tiết{" "}
+                        <FormattedMessage
+                          id="text5.see.support"
+                          values={{
+                            b: (chunks) => (
+                              <b className="text-black">{chunks}</b>
+                            ),
+                          }}
+                        />{" "}
                         <i className="fa fa-angle-right arrow-animation" />
                       </a>
                     </div>
@@ -269,17 +438,40 @@ const Support = () => {
                       </span>
                     </div>
                     <div className="icon-content">
-                      <h4 className=" m-b25">Nền tảng số EMC tracking</h4>
+                      <h4 className=" m-b25">
+                        {" "}
+                        <FormattedMessage
+                          id="text13.support"
+                          values={{
+                            b: (chunks) => (
+                              <b className="text-black">{chunks}</b>
+                            ),
+                          }}
+                        />
+                      </h4>
                       <p>
-                        Đây là nội dung demo phục vụ cho việc đánh giá có phù
-                        hợp không.
+                        <FormattedMessage
+                          id="text4.support"
+                          values={{
+                            b: (chunks) => (
+                              <b className="text-black">{chunks}</b>
+                            ),
+                          }}
+                        />
                       </p>
                       <a
                         href="services.html"
                         className="site-button-link"
                         data-hover="Xem Chi tiết"
                       >
-                        Xem Chi tiết{" "}
+                        <FormattedMessage
+                          id="text5.see.support"
+                          values={{
+                            b: (chunks) => (
+                              <b className="text-black">{chunks}</b>
+                            ),
+                          }}
+                        />{" "}
                         <i className="fa fa-angle-right arrow-animation" />
                       </a>
                     </div>
